@@ -1,5 +1,12 @@
+import Home from "./page/home/Home";
+import Layout from "./shared/components/Layout";
+
 function App() {
-  return <h1 className="text-xl text-yellow-400">DEPO</h1>;
+  return (
+    <Layout>
+      <Home />
+    </Layout>
+  );
 }
 
 export default App;

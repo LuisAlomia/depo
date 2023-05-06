@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
 type Props = {
-  childrem: ReactNode;
+  children: ReactNode;
 };
 
-const Layout = ({ childrem }: Props) => {
-  return <div>{childrem}</div>;
+const Layout = ({ children }: Props) => {
+  return <main className="max-w-6xl mx-auto p-6">{children}</main>;
 };
 
 export default Layout;
