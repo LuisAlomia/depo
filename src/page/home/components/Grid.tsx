@@ -6,9 +6,9 @@ type Props = {
 
 const Grid = ({ children }: Props) => {
   return (
-    <div className="w-full grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))] justify-items-center gap-4">
+    <section className="w-full grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))] justify-items-center gap-4">
       {children}
-    </div>
+    </section>
   );
 };
 

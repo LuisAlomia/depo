@@ -1,11 +1,15 @@
 import Home from "./page/home/Home";
 import Layout from "./shared/components/Layout";
+import Navbar from "./shared/components/Navbar";
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <>
+      <Layout>
+        <Navbar />
+        <Home />
+      </Layout>
+    </>
   );
 }
 
