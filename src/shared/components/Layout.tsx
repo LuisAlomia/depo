@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-  return <main className="max-w-6xl mx-auto p-6">{children}</main>;
+  return <main className="max-w-7xl mx-auto px-6">{children}</main>;
 };
 
 export default Layout;

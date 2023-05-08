@@ -5,8 +5,8 @@ import Navbar from "./shared/components/Navbar";
 function App() {
   return (
     <>
+      <Navbar />
       <Layout>
-        <Navbar />
         <RoutesApp />
       </Layout>
     </>
