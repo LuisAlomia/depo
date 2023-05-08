@@ -1,5 +1,5 @@
 import logo from "../../assets/logo.svg";
-import Language from "../../types/Languages";
+import Language from "../../../types/Languages";
 
 const languages: Language[] = [
   { id: 1, color: "bg-yellow-300", name: "javascript" },

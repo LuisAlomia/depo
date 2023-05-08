@@ -1,14 +1,14 @@
 import { arrayMethod } from "../../data/arrayMethod.data";
 import ArrayMethod from "../../types/ArrayMethods";
-import Card from "../home/components/Card";
-import Grid from "../home/components/Grid";
+import Card from "./components/Card";
+import Grid from "./components/Grid";
 
 const ArraysPage = () => {
   return (
     <article>
       <Grid>
         {arrayMethod.map((item: ArrayMethod) => (
-          <Card key={item.name} data={item} />
+          <Card key={item.id} data={item} />
         ))}
       </Grid>
     </article>

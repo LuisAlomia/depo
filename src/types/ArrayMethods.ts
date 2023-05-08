@@ -1,4 +1,5 @@
 type ArrayMethod = {
+  id: number;
   language: string;
   name: string;
   description?: string;
