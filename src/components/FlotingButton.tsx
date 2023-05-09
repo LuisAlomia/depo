@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useContext } from "react";
 import { DataContext } from "../context/DataContext";
+import { useNavigate } from "react-router-dom";
 
 import icoPlus from "../assets/plus.svg";
 import Language from "../types/Languages";
@@ -8,13 +9,17 @@ import Language from "../types/Languages";
 const FlotingButton = () => {
   const [active, setActive] = useState<boolean>(false);
   const { languagesButtons } = useContext(DataContext);
+  const navigate = useNavigate();
 
-  const handleButton = () => setActive(!active);
+  const handleButton = (name?: string) => {
+    navigate(`/arrays/${name}`);
+    setActive(!active);
+  };
 
   return (
     <div className="m-5">
       <button
-        onClick={handleButton}
+        onClick={() => handleButton()}
         className="w-[3rem] h-[3rem] bg-gradient-to-tl from-yellow-900 via-yellow-600 to-yellow-400 rounded-full flex justify-center items-center"
         role="floting"
       >
@@ -25,7 +30,7 @@ const FlotingButton = () => {
           {languagesButtons.map((language: Language) => (
             <li
               key={language.id}
-              onClick={handleButton}
+              onClick={() => handleButton(language.name)}
               className="flex items-center gap-1 my-2 hover:text-yellow-600 hover:cursor-pointer"
             >
               <img

@@ -19,7 +19,7 @@ const Navbar = () => {
             Inicio
           </NavLink>
           <NavLink
-            to={"/arrays"}
+            to={"/arrays/javascript"}
             className={({ isActive }) =>
               !isActive
                 ? "cursor-pointer font-medium text-[#b1b1b1] hover:text-yellow-600"

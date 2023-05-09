@@ -7,7 +7,7 @@ const RoutesApp = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/arrays" element={<ArraysPage />} />
+        <Route path="/arrays/:languageId" element={<ArraysPage />} />
         <Route path="/strings" element={"Strings"} />
         <Route path="/comandos" element={"Comandos"} />
       </Routes>
