@@ -51,11 +51,12 @@ const FlotingButton = () => {
       <button
         onClick={handleButton}
         className="w-[3rem] h-[3rem] bg-gradient-to-tl from-yellow-900 via-yellow-600 to-yellow-400 rounded-full flex justify-center items-center"
+        role="floting"
       >
         <img className="w-8" src={icoPlus} alt="button" />
       </button>
       {active && (
-        <ul className="absolute z-10 m-3 capitalize">
+        <ul role="children" className="absolute z-10 m-3 capitalize">
           {languages.map((language: Language) => (
             <li
               key={language.id}
