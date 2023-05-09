@@ -25,9 +25,11 @@ const ArraysPage = () => {
       </div>
 
       <Grid>
-        {arrayMethods.map((item: ArrayMethod) => (
-          <Card key={item.id} data={item} />
-        ))}
+        {arrayMethods
+          .filter((item: ArrayMethod) => item.language === languageId)
+          .map((item: ArrayMethod) => (
+            <Card key={item.id} data={item} />
+          ))}
       </Grid>
     </article>
   );
