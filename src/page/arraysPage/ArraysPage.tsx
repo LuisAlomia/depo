@@ -14,11 +14,13 @@ const ArraysPage = () => {
 
   return (
     <article>
-      <div className="flex gap-14 mb-14">
-        <FlotingButton />
+      <div className="flex gap-14 mb-20">
+        <div className="relative top-[-3rem]">
+          <FlotingButton />
+        </div>
         <Title
           type="arrays"
-          title={languageId !== "undefined" ? languageId : "programacion"}
+          title={languageId !== "undefined" ? languageId : "programación"}
         />
       </div>
 

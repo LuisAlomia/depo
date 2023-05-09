@@ -20,7 +20,7 @@ export const languagesButtons: Language[] = [
   },
   {
     id: 3,
-    name: "c#",
+    name: "c_Sharp",
     icon: icoCshare,
   },
   {

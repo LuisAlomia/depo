@@ -1,12 +1,16 @@
 import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="h-[5rem] w-screen bg-[#1e1e20] sticky top-0 z-20 mb-32">
+    <nav className="h-[5rem] bg-[#1e1e20] sticky top-0 mb-20 z-20 ">
       <div className="flex h-[5rem] max-w-7xl justify-between items-center bg-[#1e1e20] p-6 mx-auto">
-        <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-yellow-900 via-yellow-600 to-yellow-400 cursor-pointer">
-          <NavLink to={"/"}>dePo</NavLink>
-        </span>
+        <div className="flex justify-center items-center gap-1">
+          <img className="w-10 addMore-img" src={logo} alt="depo" />
+          <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-yellow-900 via-yellow-600 to-yellow-400 cursor-pointer">
+            <NavLink to={"/"}>dePo</NavLink>
+          </span>
+        </div>
         <ul className="flex gap-4 capitalize">
           <NavLink
             to="/"
