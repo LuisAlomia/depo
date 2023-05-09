@@ -1,7 +1,8 @@
 type Language = {
   id: number;
-  color: string;
+  color?: string;
   name: string;
+  icon?: string;
 };
 
 export default Language;
