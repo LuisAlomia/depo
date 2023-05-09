@@ -1,5 +1,5 @@
 import { arrayMethod } from "../../data/arrayMethod.data";
-import FlotingButton from "../../shared/components/FlotingButton";
+import FlotingButton from "../../components/FlotingButton";
 import ArrayMethod from "../../types/ArrayMethods";
 import Card from "./components/Card";
 import Grid from "./components/Grid";

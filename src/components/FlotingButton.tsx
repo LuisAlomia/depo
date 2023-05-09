@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Language from "../../types/Languages";
-import icoPlus from "../../assets/plus.svg";
-import icoJavascript from "../../assets/javascript.svg";
-import icoJava from "../../assets/java.svg";
-import icoPhp from "../../assets/php.svg";
-import icoPython from "../../assets/python.svg";
-import icoRuby from "../../assets/rubí.svg";
-import icoCshare from "../../assets/c-sharp.svg";
+import Language from "../types/Languages";
+import icoPlus from "../assets/plus.svg";
+import icoJavascript from "../assets/javascript.svg";
+import icoJava from "../assets/java.svg";
+import icoPhp from "../assets/php.svg";
+import icoPython from "../assets/python.svg";
+import icoRuby from "../assets/rubí.svg";
+import icoCshare from "../assets/c-sharp.svg";
 
 const languages: Language[] = [
   {

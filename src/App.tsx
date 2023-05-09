@@ -1,15 +1,16 @@
 import RoutesApp from "./RoutesApp";
-import Layout from "./shared/components/Layout";
-import Navbar from "./shared/components/Navbar";
+import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
+import { DataContextProvider } from "./context/DataContext";
 
 function App() {
   return (
-    <>
+    <DataContextProvider>
       <Navbar />
       <Layout>
         <RoutesApp />
       </Layout>
-    </>
+    </DataContextProvider>
   );
 }
 
