@@ -1,6 +1,6 @@
 import ArrayMethod from "../types/ArrayMethods";
 
-export const arrayMethod: ArrayMethod[] = [
+export const arrayMethods: ArrayMethod[] = [
   {
     id: 1,
     language: "javascript",

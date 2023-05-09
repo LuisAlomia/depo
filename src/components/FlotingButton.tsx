@@ -1,48 +1,13 @@
 import { useState } from "react";
-import Language from "../types/Languages";
-import icoPlus from "../assets/plus.svg";
-import icoJavascript from "../assets/javascript.svg";
-import icoJava from "../assets/java.svg";
-import icoPhp from "../assets/php.svg";
-import icoPython from "../assets/python.svg";
-import icoRuby from "../assets/rubí.svg";
-import icoCshare from "../assets/c-sharp.svg";
+import { useContext } from "react";
+import { DataContext } from "../context/DataContext";
 
-const languages: Language[] = [
-  {
-    id: 1,
-    name: "javascript",
-    icon: icoJavascript,
-  },
-  {
-    id: 2,
-    name: "java",
-    icon: icoJava,
-  },
-  {
-    id: 3,
-    name: "c#",
-    icon: icoCshare,
-  },
-  {
-    id: 4,
-    name: "python",
-    icon: icoPython,
-  },
-  {
-    id: 5,
-    name: "ruby",
-    icon: icoRuby,
-  },
-  {
-    id: 6,
-    name: "php",
-    icon: icoPhp,
-  },
-];
+import icoPlus from "../assets/plus.svg";
+import Language from "../types/Languages";
 
 const FlotingButton = () => {
   const [active, setActive] = useState<boolean>(false);
+  const { languagesButtons } = useContext(DataContext);
 
   const handleButton = () => setActive(!active);
 
@@ -57,7 +22,7 @@ const FlotingButton = () => {
       </button>
       {active && (
         <ul role="children" className="absolute z-10 m-3 capitalize">
-          {languages.map((language: Language) => (
+          {languagesButtons.map((language: Language) => (
             <li
               key={language.id}
               onClick={handleButton}

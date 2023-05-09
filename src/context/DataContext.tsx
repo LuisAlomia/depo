@@ -1,11 +1,16 @@
 import React, { createContext } from "react";
+import { languagesButtons } from "../data/arrayLanguageButton";
+import { languagesBadges } from "../data/arrayLanguageBadge";
+import { arrayMethods } from "../data/arrayMethod.data";
 
 type dataContextProviderProps = {
   children: React.ReactNode;
 };
 
 const data = {
-  name: "luis",
+  languagesButtons,
+  languagesBadges,
+  arrayMethods,
 };
 
 export const DataContext = createContext(data);

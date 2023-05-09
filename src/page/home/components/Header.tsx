@@ -1,15 +1,11 @@
 import logo from "../../../assets/logo.svg";
 import Language from "../../../types/Languages";
-
-const languages: Language[] = [
-  { id: 1, color: "bg-yellow-300", name: "javascript" },
-  { id: 2, color: "bg-yellow-400", name: "java" },
-  { id: 3, color: "bg-yellow-500", name: "git" },
-  { id: 4, color: "bg-yellow-600", name: "docker" },
-  { id: 5, color: "bg-yellow-700", name: "sql" },
-];
+import { DataContext } from "../../../context/DataContext";
+import { useContext } from "react";
 
 const Header = () => {
+  const { languagesBadges } = useContext(DataContext);
+
   return (
     <header className="w-full flex flex-wrap-reverse justify-between items-center">
       <div className="w-1/2">
@@ -20,7 +16,7 @@ const Header = () => {
           Metodos y comandos a un click de tu mouse.
         </p>
         <p>
-          {languages.map((language: Language) => (
+          {languagesBadges.map((language: Language) => (
             <span
               className={`inline-block text-center mr-2 px-2 rounded-3xl min-w-[3.5rem] ${language.color} text-black font-bold text-sm capitalize`}
               key={language.id}
