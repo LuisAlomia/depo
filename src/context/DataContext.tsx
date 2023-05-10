@@ -4,6 +4,7 @@ import { languagesBadges } from "../data/arrayLanguageBadge";
 import { arrayMethods } from "../data/arrayMethod.data";
 import { arrayMethodsStrings } from "../data/arrayMethodString";
 import { arrayCommands } from "../data/arrayCommands";
+import { commandsLanguageButton } from "../data/commandsLanguageButton";
 
 type dataContextProviderProps = {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ type dataContextProviderProps = {
 const data = {
   languagesButtons,
   languagesBadges,
+  commandsLanguageButton,
   arrayMethods,
   arrayMethodsStrings,
   arrayCommands,

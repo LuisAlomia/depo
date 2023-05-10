@@ -7,14 +7,14 @@ import Title from "../../components/Title";
 import { useParams } from "react-router-dom";
 
 const CommandsPage = () => {
-  const { arrayCommands } = useContext(DataContext);
+  const { arrayCommands, commandsLanguageButton } = useContext(DataContext);
   const { languageId } = useParams();
 
   return (
     <article>
       <div className="flex gap-14 mb-20 max-[600px]:mb-2 max-[600px]:flex-col-reverse">
         <div className="relative top-[-3rem]">
-          <FlotingButton type={"commands"} />
+          <FlotingButton type={"commands"} data={commandsLanguageButton} />
         </div>
         <Title
           type="arrays"

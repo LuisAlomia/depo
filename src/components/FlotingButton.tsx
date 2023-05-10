@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { useContext } from "react";
-import { DataContext } from "../context/DataContext";
 import { useNavigate } from "react-router-dom";
 
 import icoPlus from "../assets/plus.svg";
@@ -8,11 +6,11 @@ import Language from "../types/Languages";
 
 type Props = {
   type: string;
+  data: Language[];
 };
 
-const FlotingButton = ({ type }: Props) => {
+const FlotingButton = ({ type, data }: Props) => {
   const [active, setActive] = useState<boolean>(false);
-  const { languagesButtons } = useContext(DataContext);
   const navigate = useNavigate();
 
   const handleButton = (name?: string) => {
@@ -31,21 +29,21 @@ const FlotingButton = ({ type }: Props) => {
       </button>
       {active && (
         <>
-          <div className="w-[8rem] h-[20rem] rounded-3xl blur-xl bg-black opacity-40 absolute left-[-1rem] z-10"></div>
+          <div className="w-[8rem] h-[10rem] rounded-3xl blur-xl bg-black opacity-40 absolute left-[-1rem] z-10"></div>
 
           <ul role="children" className="absolute z-10 m-3 capitalize">
-            {languagesButtons.map((language: Language) => (
+            {data.map((item: Language) => (
               <li
-                key={language.id}
-                onClick={() => handleButton(language.name)}
+                key={item.id}
+                onClick={() => handleButton(item.name)}
                 className="flex items-center gap-1 my-2 hover:text-yellow-600 hover:cursor-pointer font-semibold"
               >
                 <img
                   className="rounded-full w-7 bg-yellow-400 p-1"
-                  src={language.icon}
-                  alt={language.name}
+                  src={item.icon}
+                  alt={item.name}
                 />
-                {language.name}
+                {item.name}
               </li>
             ))}
           </ul>
