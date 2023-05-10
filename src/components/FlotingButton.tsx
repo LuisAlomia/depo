@@ -6,13 +6,17 @@ import { useNavigate } from "react-router-dom";
 import icoPlus from "../assets/plus.svg";
 import Language from "../types/Languages";
 
-const FlotingButton = () => {
+type Props = {
+  type: string;
+};
+
+const FlotingButton = ({ type }: Props) => {
   const [active, setActive] = useState<boolean>(false);
   const { languagesButtons } = useContext(DataContext);
   const navigate = useNavigate();
 
   const handleButton = (name?: string) => {
-    navigate(`/arrays/${name}`);
+    navigate(`/${type}/${name}`);
     setActive(!active);
   };
 

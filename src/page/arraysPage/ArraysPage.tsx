@@ -16,7 +16,7 @@ const ArraysPage = () => {
     <article>
       <div className="flex gap-14 mb-20 max-[600px]:mb-2 max-[600px]:flex-col-reverse">
         <div className="relative top-[-3rem]">
-          <FlotingButton />
+          <FlotingButton type={"arrays"} />
         </div>
         <Title
           type="arrays"
@@ -26,7 +26,7 @@ const ArraysPage = () => {
 
       <Grid>
         {arrayMethods
-          .filter((item: ArrayMethod) => item.language === "javascript")
+          .filter((item: ArrayMethod) => item.language === languageId)
           .map((item: ArrayMethod) => (
             <Card key={item.id} data={item} />
           ))}

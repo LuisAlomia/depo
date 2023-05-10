@@ -11,7 +11,7 @@ type Menu = {
 const menu: Menu[] = [
   { name: "inicio", path: "/" },
   { name: "arrays", path: "/arrays/javascript" },
-  { name: "strings", path: "/strings" },
+  { name: "strings", path: "/strings/javascript" },
   { name: "comandos", path: "/comandos" },
 ];
 
