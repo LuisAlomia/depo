@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./page/home/Home";
 import ArraysPage from "./page/arraysPage/ArraysPage";
 import StringPage from "./page/stringsPage/StringPage";
+import CommandsPage from "./page/commandPage/CommandsPage";
 
 const RoutesApp = () => {
   return (
@@ -10,7 +11,7 @@ const RoutesApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/arrays/:languageId" element={<ArraysPage />} />
         <Route path="/strings/:languageId" element={<StringPage />} />
-        <Route path="/comandos" element={"Comandos"} />
+        <Route path="/commands/:languageId" element={<CommandsPage />} />
       </Routes>
     </div>
   );
