@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ArrayMethod from "../../../types/ArrayMethods";
-import "../../../index.css";
-import Code from "../../../components/Code";
+import ArrayMethod from "../types/ArrayMethods";
+import "../index.css";
+import Code from "./Code";
 
 type Props = {
   data: ArrayMethod;

@@ -27,7 +27,7 @@ const FlotingButton = () => {
       </button>
       {active && (
         <>
-          <div className="w-[8rem] h-[20rem] rounded-3xl blur-3xl bg-gray-400 opacity-70 absolute left-[-1rem] z-0"></div>
+          <div className="w-[8rem] h-[20rem] rounded-3xl blur-xl bg-black opacity-40 absolute left-[-1rem] z-10"></div>
 
           <ul role="children" className="absolute z-10 m-3 capitalize">
             {languagesButtons.map((language: Language) => (
