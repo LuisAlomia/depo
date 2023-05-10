@@ -13,7 +13,7 @@ const Code = ({ data }: Props) => {
   }, []);
 
   return (
-    <pre className="rounded-xl">
+    <pre className="rounded-xl scrollContainer">
       <code className="language-javascript">{data}</code>
     </pre>
   );

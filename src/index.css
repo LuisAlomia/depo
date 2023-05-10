@@ -23,3 +23,32 @@
 .foco:focus-within span {
   display: inline;
 }
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.scrollContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.scrollContainer::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+
+.scrollContainer::-webkit-scrollbar-button:increment,
+.scrollContainer::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scrollContainer::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 1px solid #3f4244;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

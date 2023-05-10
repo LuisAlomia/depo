@@ -16,10 +16,7 @@ const CommandsPage = () => {
         <div className="relative top-[-3rem]">
           <FlotingButton type={"commands"} data={commandsLanguageButton} />
         </div>
-        <Title
-          type="arrays"
-          title={languageId !== "undefined" ? languageId : "programación"}
-        />
+        <Title type="comandos" title={languageId} />
       </div>
 
       {arrayCommands
