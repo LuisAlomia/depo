@@ -13,7 +13,9 @@ const FlotingButton = ({ type, data }: Props) => {
   const [active, setActive] = useState<boolean>(false);
   const navigate = useNavigate();
 
-  const handleButton = (name?: string) => {
+  const handleButton = () => setActive(!active);
+
+  const handlePhat = (name?: string) => {
     navigate(`/${type}/${name}`);
     setActive(!active);
   };
@@ -35,7 +37,7 @@ const FlotingButton = ({ type, data }: Props) => {
             {data.map((item: Language) => (
               <li
                 key={item.id}
-                onClick={() => handleButton(item.name)}
+                onClick={() => handlePhat(item.name)}
                 className="flex items-center gap-1 my-2 hover:text-yellow-600 hover:cursor-pointer font-semibold"
               >
                 <img
