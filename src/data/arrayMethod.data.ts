@@ -7,6 +7,15 @@ export const arrayMethods: ArrayMethod[] = [
     name: "map",
     description:
       "El método map() crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.",
+    example: `
+let numbers = [1, 5, 10, 15];
+
+let doubles = numbers.map((number) => {
+    return number * 2;
+});
+
+double is now [2, 10, 20, 30]
+    `,
   },
   {
     id: 2,

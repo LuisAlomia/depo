@@ -19,3 +19,7 @@
   filter: brightness(0) saturate(100%) invert(51%) sepia(100%) saturate(409%)
     hue-rotate(3deg) brightness(89%) contrast(101%);
 }
+
+.foco:focus-within span {
+  display: inline;
+}
