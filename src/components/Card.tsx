@@ -20,10 +20,7 @@ const Card = ({ data }: Props) => {
               {data.name}
             </h3>
             <p>{data.description}</p>
-            <a
-              onClick={handleButton}
-              className="hover:text-yellow-600 hover:cursor-pointer font-medium text-xs"
-            >
+            <a className="hover:text-yellow-600 hover:cursor-pointer font-medium text-xs">
               Documentación
             </a>
           </div>
