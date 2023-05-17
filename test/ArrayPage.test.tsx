@@ -1,8 +1,8 @@
 import { describe, expect, test } from "vitest";
 import { render, screen } from "@testing-library/react";
 
-import Card from "../src/page/arraysPage/components/Card";
-import Grid from "../src/page/arraysPage/components/Grid";
+import Card from "../src/components/Card";
+import Grid from "../src/components/Grid";
 import React from "react";
 import ArrayMethod from "../src/types/ArrayMethods";
 
