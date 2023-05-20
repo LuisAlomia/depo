@@ -12,7 +12,7 @@ const menu: Menu[] = [
   { name: "inicio", path: "/" },
   { name: "arrays", path: "/arrays/javascript" },
   { name: "strings", path: "/strings/javascript" },
-  { name: "comandos", path: "/commands/sql" },
+  { name: "comandos", path: "/commands/git" },
 ];
 
 const Navbar = () => {
